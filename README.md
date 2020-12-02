@@ -16,7 +16,7 @@ Un grupo de inversores, que no quiere dar la cara, nos contrató para llevar a c
 
 Por cuestiones de almacenamiento en los servidores, nos interesará saber cuánto espacio ocupa cada publicación, en Bytes:
 
-* Las **fotos** tienen un alto y ancho dado en pixels; el espacio que ocupan se calcula como `alto * ancho * factor de compresión`. El factor de compresión actual para las fotos es de 0.7, pero debe poder modificarse (para todas las fotos a la vez).
+* Las **fotos** tienen un alto y ancho dado en pixels; el espacio que ocupan se calcula como `alto * ancho * factor de compresión`. El factor de compresión actual para las fotos es de 0.7, pero debe poder modificarse (para todas las fotos a la vez). Como de esta cuenta muy probablemente resulte un número con coma, vamos a redondear para arriba en todos los casos (ejemplo: `99.85` se volvería `100`, y lo mismo para `99.12`).
 * Las publicaciones de **texto** son mucho más fáciles de calcular, ya que el espacio que ocupan es igual a la cantidad de caracteres que tienen.
 * Los **videos** tienen un tamaño que depende de su calidad. Para la calidad SD, el tamaño es igual a la duración del video en segundos. Para los videos HD 720p el tamaño es igual al triple de la duración en segundos del video y para los videos de HD 1080p el tamaño es el doble de los HD 720p. 
 
