@@ -20,11 +20,9 @@ Por cuestiones de almacenamiento en los servidores, nos interesará saber cuánt
 * Las publicaciones de **texto** son mucho más fáciles de calcular, ya que el espacio que ocupan es igual a la cantidad de caracteres que tienen.
 * Los **videos** tienen un tamaño que depende de su calidad. Para la calidad SD, el tamaño es igual a la duración del video en segundos. Para los videos HD 720p el tamaño es igual al triple de la duración en segundos del video y para los videos de HD 1080p el tamaño es el doble de los HD 720p. 
 
-Los usuarios que pueden ver una publicación pueden indicar que esa publicación les gusta, aumentando el número de _me gustas_ de la misma. A nuestra aplicación le importa tanto la cantidad de _me gustas_ que recibió una publicación, como saber quiénes son los
-usuario que le dieron _me gusta_. No es posible que una misma persona le de _me gusta_ más de una vez.
+Los usuarios que pueden ver una publicación pueden indicar que esa publicación les gusta, aumentando el número de _me gustas_ de la misma. A nuestra aplicación le importa tanto la cantidad de _me gustas_ que recibió una publicación, como saber quiénes le dieron _me gusta_. No es posible que una misma persona le de _me gusta_ más de una vez.
 
-Los usuarios de Faceless tienen **amigos**, pero no quieren compartir todas sus publicaciones con todos ellos. Por ejemplo, hay fotos y videos que no quieren que sus familias vean, por alguna extraña razón. Para satisfacer esa necesidad, cada publicación tiene asignado
-un permiso, que puede ser:
+Nuestros usuarios tienen **amigos**, pero no quieren compartir todas sus publicaciones con todos ellos. Por ejemplo, hay fotos y videos que no quieren que sus familias vean, por alguna extraña razón. Para satisfacer esa necesidad, cada publicación tiene asignado un permiso, que puede ser:
 
 * **público**: cualquier usuario puede ver la publicación,
 * **sólo amigos**: sólo los amigos pueden verla,
