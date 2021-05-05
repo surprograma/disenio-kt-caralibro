@@ -16,9 +16,9 @@ Un grupo de inversores, que no quiere dar la cara, nos contrató para llevar a c
 
 Por cuestiones de almacenamiento en los servidores, nos interesará saber cuánto espacio ocupa cada publicación, en Bytes:
 
-* Las **fotos** tienen un alto y ancho dado en pixels; el espacio que ocupan se calcula como `alto * ancho * factor de compresión`. El factor de compresión actual para las fotos es de 0.7, pero debe poder modificarse (para todas las fotos a la vez). Como de esta cuenta muy probablemente resulte un número con coma, vamos a redondear para arriba en todos los casos (ejemplo: `99.85` se volvería `100`, y lo mismo para `99.12`).
+* Las **fotos** tienen un alto y ancho dado en pixels; el espacio que ocupan se calcula como `alto * ancho * factor de compresión`. El factor de compresión actual para las fotos es de 0.7, pero debe poder modificarse **para todas las fotos a la vez**. Como de esta cuenta muy probablemente resulte un número con coma, vamos a redondear para arriba en todos los casos (ejemplo: `99.85` se volvería `100`, y lo mismo para `99.12`).
 * Las publicaciones de **texto** son mucho más fáciles de calcular, ya que el espacio que ocupan es igual a la cantidad de caracteres que tienen.
-* Los **videos** tienen un tamaño que depende de la calidad con la cual el usuario elija publicarlo. Para la calidad SD, el tamaño es igual a la duración del video en segundos. Para los videos HD 720p el tamaño es igual al triple de la duración en segundos del video y para los videos de HD 1080p el tamaño es el doble de los HD 720p. Debe poder modificarse la calidad sin tener que volver a hacer la publicación.
+* Los **videos** tienen un tamaño que depende de la calidad con la cual el usuario elija publicarlo. Para la calidad SD, el tamaño es igual a la duración del video en segundos. Para los videos HD 720p el tamaño es igual al triple de la duración en segundos del video y para los videos de HD 1080p el tamaño es el doble de los HD 720p + 300 bytes fijos. Debe poder modificarse la calidad sin tener que volver a hacer la publicación.
 
 Los usuarios que pueden ver una publicación pueden indicar que esa publicación les gusta, aumentando el número de _me gustas_ de la misma. A nuestra aplicación le importa tanto la cantidad de _me gustas_ que recibió una publicación, como saber quiénes le dieron _me gusta_. No es posible que una misma persona le de _me gusta_ más de una vez.
 
@@ -26,10 +26,10 @@ Nuestros usuarios tienen **amigos**, pero no quieren compartir todas sus publica
 
 * **público**: cualquier usuario puede ver la publicación,
 * **sólo amigos**: sólo los amigos pueden verla,
-* **privado con lista de permitidos**: el usuario configura una lista que vale para esa publicación, y solo los usuarios que pertenezcan a esa lista pueden verla,
+* **privado con lista de permitidos**: el usuario configura una lista que vale solamente para esa publicación, y solo los usuarios que pertenezcan a esa lista pueden verla. Dos publicaciones deben poder tener listas de permitidos diferentes.  
 * **público con lista de excluidos**: similar al anterior, pero en este caso todos pueden ver la publicación excepto quienes están en la lista.
 
-Cada publicación tiene uno de estos permisos asociados, que debe poder modificarse en cualquier momento. Sea cual sea la configuración, un usuario siempre puede ver sus propias publicaciones.
+Cada publicación tiene uno de estos permisos asociados, que debe poder modificarse en cualquier momento. **Sea cual sea la configuración, un usuario siempre puede ver sus propias publicaciones.**
 
 ## Requerimientos
 
