@@ -26,7 +26,7 @@ Nuestros usuarios tienen **amigos**, pero no quieren compartir todas sus publica
 
 * **público**: cualquier usuario puede ver la publicación,
 * **sólo amigos**: sólo los amigos pueden verla,
-* **privado con lista de permitidos**: el usuario configura una lista que vale solamente para esa publicación, y solo los usuarios que pertenezcan a esa lista pueden verla. Dos publicaciones deben poder tener listas de permitidos diferentes.  
+* **privado con lista de permitidos**: el usuario configura una lista que vale para esa publicación, y solo los usuarios que pertenezcan a esa lista pueden verla. Para que quede claro: la lista se establece _para cada publicación,_ dos publicaciones con este permiso deben poder tener listas de permitidos diferentes,
 * **público con lista de excluidos**: similar al anterior, pero en este caso todos pueden ver la publicación excepto quienes están en la lista.
 
 Cada publicación tiene uno de estos permisos asociados, que debe poder modificarse en cualquier momento. **Sea cual sea la configuración, un usuario siempre puede ver sus propias publicaciones.**
