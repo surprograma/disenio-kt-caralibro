@@ -43,13 +43,17 @@ Se pide implementar la solución a este problema en Kotlin, junto con los tests 
 6. Saber cual es el amigo más popular que tiene un usuario. Es decir, el amigo que tiene mas _me gusta_ entre todas sus publicaciones.
 7. Saber si un usuario stalkea a otro. Lo cual ocurre si el stalker le dio _me gusta_ a más del 90% de sus publicaciones.
 
-## Créditos
+## Licencia
 
-Enunciado original creado por Carlos Lombardi y Leonardo Gassman para UNQ. Transformado a Markdown, reformateado, reorganizado el texto y agregados nuevos requerimientos por Federico Aloi para UNaHur.
+Esta obra fue elaborada por [Federico Aloi](https://github.com/faloi) y publicada bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional][cc-by-sa].
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
-Esta obra está bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional][cc-by-sa].
-
 [cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/deed.es
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+
+### Créditos
+
+:memo: [Enunciado original](https://objetos1wollokunq.gitlab.io/material/guia9-integradores.pdf) creado por [Carlos Lombardi](https://github.com/clombardi) y [Leonardo Gassman](https://github.com/lgassman).
+
+:camera_flash: Imagen de portada por <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> en <a href="https://unsplash.com/s/photos/delete-facebook?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
